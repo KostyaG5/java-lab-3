@@ -11,34 +11,34 @@ public class Hallo_World {
 	public static void num6() {
 		//Дан символ C, изображающий цифру или букву (латинскую или кириллическую).Если C изображает цифру, то вывести строку «digit», если латинскую букву — вывести строку «lat», если кириллическую — вывести строку «rus».
 		
-		String c = "g" ; // символ C, изображающий цифру или букву
+		String c = "k" ; // символ C, изображающий цифру или букву
 		String ru[] = {"А" , "а" , "Б" , "б" , "В" , "в" , "Г" , "г" , "Д" , "д" , "Е" , "е" , "Ё" , "ё" , "Ж" , "ж" , "З" , "з" , "И" , "и" , "Й" , "й" , "К" , "к" , "Л" , "л" , "М" , "м" , "Н" ,"н" , "О" , "о" , "П" , "п" , "Р" , "р" , "С" , "с" , "Т" , "т" , "У" ,"у" , "Ф" , "ф" , "Х" , "х" , "Ц" , "ц" , "Ч" , "ч" , "Ш" , "ш" , "Щ" , "щ" , "Э" , "э" , "Ю" , "ю" , "Я" , "я" , "Ь" , "ь" , "Ы" , "ы" , "Ъ" , "ъ"} ; 
 		String digit[] = {"1" , "2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" , "0"};
 		String lat[] = {"A" , "a" , "B" , "b" , "C" , "c" , "d" , "D" , "E" , "e" , "F" , "f" , "G" , "g" , "H" , "h" , "i" , "I" , "J" , "j" , "K" , "k" , "L" , "l" , "M" , "m" , "N" , "n" , "O" ,"o" , "P" , "p" , "Q" , "q" , "R" , "r" , "S" , "s" , "T" , "t" , "U" ,"u" , "V" , "v" , "W" , "w" , "X" , "x" , "Y" , "y" , "Z" , "z"} ; 
 		
 		
 		for(int i = 0 ; i < ru.length ; ) {
-			if(ru[i] != c) {
+			if(!ru[i].equals(c)) {
 				i++ ;				
-			} else if(ru[i] == c) {
+			} else if(ru[i].equals(c)) {
 			    System.out.print("rus");
 			    return ;
 			    }
 			}
 		
 		for(int i = 0 ; i < digit.length ; ) {
-			if(digit[i] != c) {
+			if(!digit[i].equals(c)) {
 				i++ ;
-			} else if(digit[i] == c) {
+			} else if(digit[i].equals(c)) {
 			    System.out.print("digit");
 			    return ;
 			    }
 			}
 		
 		for(int i = 0 ; i < lat.length ; ) {
-			if(lat[i] != c) {
+			if(!lat[i].equals(c)) {
 				i++ ;
-			} else if(lat[i] == c) {
+			} else if(lat[i].equals(c)) {
 			    System.out.print("lat");
 			    return ;
 			    }
